@@ -3,7 +3,7 @@
 The following repository tries to build a robot from scratch, put a lidar on it and then navigate through 4 waypoints.
 It also tries to dockerize the entire application so that it can work on any computer.
 
-This repository was made by following this [tutorial] (https://automaticaddison.com/the-ultimate-guide-to-the-ros-2-navigation-stack/).
+This repository was made by following this [tutorial] (https://automaticaddison.com/the-ultimate-guide-to-the-ros-2-navigation-stack).
 
 ## URDF and SDF Files
 In the `models` folder, there is a URDF file. This URDF file describes the entire robot structure with joint and sensor information.

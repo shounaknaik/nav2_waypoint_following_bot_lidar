@@ -92,12 +92,20 @@ When I copied the source file into this docker file, I could build my package bu
 <img src = "images/nav2_nf.png" width = 760, height = 400> 
 </p>   
 
-I also tried to follow the official link - https://docs.nav2.org/development_guides/build_docs/index.html#install. Here the dockers only build for `rolling` tag and not for `humble` tag. The `rolling` tag docker failed to load as well. 
+I also tried to follow the official link - https://docs.nav2.org/development_guides/build_docs/index.html#install. Here the dockers only build for `rolling` tag and not for `humble` tag. The `rolling` tag docker failed to load as well. I tried pulling containers from ghcr.io/ros-planning/navigation2:main as well. These containers also were not useful.
 
 <p align = "center">
   <img src = "images/docker_fail.png" width = 1000, height = 400> 
 </p>   
 
 
-I also tried to write my own Dockerfile but the `nav2` problem still remains. This file can be seen as the `Dockerfile`.   
+I also tried to write my own Dockerfile but the `nav2` problem still remains. This file can be seen as the `Dockerfile`. 
+To run this please run the following commands:
+
+```
+docker build -t ros2_humble_image .
+docker run -i --name ros2_humble_container ros2_humble_image
+```
+While this image runs, it still does not have `nav2` running. 
+
 I would love to tackle this problem further and learn about Docker while at Void Robotics! 

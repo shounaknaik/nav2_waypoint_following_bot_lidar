@@ -83,19 +83,19 @@ Firstly, I tried pulling a docker, running it and visualizing the interface in `
      ```
 Then I was succesfull in launching a Gazebo window and launching a turtlebot in Docker
 <p align = "center">
-<img src = "images/novnc.png" width = 600, height = 400> 
+<img src = "images/novnc.png" width = 700, height = 500> 
 </p>  
 
 When I copied the source file into this docker file, I could build my package but `nav2` was not found. I tried docker file from [husarion](https://github.com/husarion/navigation2-docker/blob/main/Dockerfile). I tried building the docker file but the image did not start even after 5 minutes. The same was the case when I pulled the docker file. 
 
 <p align = "center">
-<img src = "images/nav2_nf.png" width = 600, height = 400> 
+<img src = "images/nav2_nf.png" width = 700, height = 500> 
 </p>   
 
 I also tried to follow the official link - https://docs.nav2.org/development_guides/build_docs/index.html#install. Here the dockers only build for `rolling` tag and not for `humble` tag. The `rolling` tag docker failed to load as well. 
 
 <p align = "center">
-  <img src = "images/docker_fail.png" width = 700, height = 400> 
+  <img src = "images/docker_fail.png" width = 1000, height = 400> 
 </p>   
 
 

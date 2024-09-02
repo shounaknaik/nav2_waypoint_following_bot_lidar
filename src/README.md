@@ -3,7 +3,7 @@
 The following repository tries to build a robot from scratch, put a lidar on it and then navigate through 4 waypoints.
 It also tries to dockerize the entire application so that it can work on any computer.
 
-This repository was made by following this [tutorial] (https://automaticaddison.com/the-ultimate-guide-to-the-ros-2-navigation-stack).
+This repository was made by following this tutorial - (https://automaticaddison.com/the-ultimate-guide-to-the-ros-2-navigation-stack).
 
 ## URDF and SDF Files
 In the `models` folder, there is a URDF file. This URDF file describes the entire robot structure with joint and sensor information.
@@ -67,10 +67,9 @@ This script is adopted from [Samsung Research](https://github.com/ros-navigation
    - The robot should follow to the waypoints and then stop after the 4 waypoints. 
 
 ### Visualization 
-<video width="640" height="480" controls>
-  <source src="void_submission.mp4" type="video/mp4">
-  Robot following 4 waypoints
-</video>
+<iframe width="640" height="480" src="void_submission.mp4" title="Waypoint Following" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+	
+</iframe>   
 
 
 

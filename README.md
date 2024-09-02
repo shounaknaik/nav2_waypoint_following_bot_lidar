@@ -74,7 +74,7 @@ This script is adopted from [Samsung Research](https://github.com/ros-navigation
 
 Here's a video demonstrating the project's features:
 
-[Image of video](./void_submission.mp4)
+https://github.com/user-attachments/assets/f597a7b3-1816-4314-8a41-059708df3c70
 
 ## Docker 
 

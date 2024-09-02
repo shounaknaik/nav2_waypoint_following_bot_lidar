@@ -67,21 +67,40 @@ This script is adopted from [Samsung Research](https://github.com/ros-navigation
    - The robot should follow to the waypoints and then stop after the 4 waypoints. 
 
 ### Visualization 
-<!-- <video width="640" height="480" controls>
-  <source src="void_submission.mp4" type="video/mp4">
-  Robot following 4 waypoints
-</video> -->
 
-Here's a video demonstrating the project's features:
+Here's a video demonstrating the robot following 4 waypoints:
 
 https://github.com/user-attachments/assets/f597a7b3-1816-4314-8a41-059708df3c70
 
+<p align = "center">
+<img src = "void_submission.mp4" width = 400, height = 300> 
+</p> 
+
 ## Docker 
 
+While I am not very well versed with Docker, I have tried my very best to dockerize the solution along with `nav2`.  I would love to tackle this problem further and learn about Docker while at Void Robotics.
+Firstly, I tried pulling a docker, running it and visualizing the interface in `noVNC`. The containers that I used were official containers.
+   - Open a new terminal and run:
+     ```
+      sudo docker pull tiryoh/ros2-desktop-vnc:humble
+      sudo docker run -i -p 6080:80 -v /void_robot --name void_robot tiryoh/ros2-desktop-vnc:humble
+     ```
+Then I was succesfull in launching a Gazebo window and launching a turtlebot in Docker
+<p align = "center">
+<img src = "images/novnc.png" width = 400, height = 300> 
+</p>  
 
-https://docs.nav2.org/development_guides/build_docs/index.html#install
-sudo docker pull /tiryoh/ros2-desktop-vnc:foxy
-https://automaticaddison.com/how-to-install-and-launch-ros2-using-docker/
-https://github.com/husarion/navigation2-docker/blob/main/Dockerfile
+When I copied the source file into this docker file, I could build my package but `nav2` was not found. I tried docker file from [husarion](https://github.com/husarion/navigation2-docker/blob/main/Dockerfile). I tried building the docker file but the image did not start even after 5 minutes. The same was the case when I pulled the docker file. 
 
-sudo docker run -i -p 6080:80 -v /void_robot --name void_robot tiryoh/ros2-desktop-vnc:humble
+<p align = "center">
+<img src = "images/nav2_nf.png" width = 400, height = 300> 
+</p>   
+
+I also tried to follow the official link - https://docs.nav2.org/development_guides/build_docs/index.html#install. Here the dockers only build for `rolling` tag and not for `humble` tag. The `rolling` tag docker failed to load as well. 
+
+<p align = "center">
+<img src = "images/docker_fail.png" width = 400, height = 300> 
+</p>   
+
+
+I also tried to write my own Dockerfile but the `nav2` problem still remains. I would love to tackle this problem further and learn about Docker while at Void Robotics!

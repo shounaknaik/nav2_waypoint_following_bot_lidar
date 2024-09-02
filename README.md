@@ -67,10 +67,14 @@ This script is adopted from [Samsung Research](https://github.com/ros-navigation
    - The robot should follow to the waypoints and then stop after the 4 waypoints. 
 
 ### Visualization 
-<video width="640" height="480" controls>
+<!-- <video width="640" height="480" controls>
   <source src="void_submission.mp4" type="video/mp4">
   Robot following 4 waypoints
-</video>
+</video> -->
+
+Here's a video demonstrating the project's features:
+
+[Image of video](./void_submission.mp4)
 
 ## Docker 
 

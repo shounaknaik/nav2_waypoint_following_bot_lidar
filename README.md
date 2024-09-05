@@ -70,5 +70,5 @@ This script is adopted from [Samsung Research](https://github.com/ros-navigation
 
 Here's a video demonstrating the robot following 4 waypoints:
 
-https://github.com/user-attachments/assets/f597a7b3-1816-4314-8a41-059708df3c70
+https://github.com/user-attachments/assets/ae5bcaa5-62ea-4f61-a7eb-036bc79f410d
 
